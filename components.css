@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.album {
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+  }
+  
+  .album-popular {
+    box-sizing: border-box;
+    width: 190px;
+    height: 190px;
+    background-image: url('./Images/PMQ.jpg');
+    color: #DDD;
+    transform: scale(1);
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .album-popular:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .album-popular .overlay {
+    height: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+  
+  
+  }
+  
+  .album-popular:hover .overlay {
+    opacity: 1;
+  
+  }
+  
+  .album-popular .overlay svg {
+    transform: scale(0);
+    transition: all 0.5s;
+  
+  }
+  
+  .album-popular:hover .overlay svg {
+    transform: scale(1);
+    transition: all 0.5s;
+  }
+  .card-info{
+    width: 190px;
+  }
+  .card-info .title a{
+      
+    font-size: 14px;
+      font-weight: bold;
+      color: #32323d;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+      overflow: hidden;
+      padding: 10px 0;
+      text-transform: capitalize;
+      text-overflow: ellipsis;
+      text-decoration: none;
+  }
+  .card-info .artist a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: #a0a0a0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  }
+  .card-info .title a:hover,.card-info .artist a:hover {
+    color: #7406A2;
+  }
