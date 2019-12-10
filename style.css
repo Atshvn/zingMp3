@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto,sans-serif;
+}
+ul{
+    list-style: none;
 }
 .col-song{
     display: flex;
@@ -72,7 +75,7 @@
       color: #fcfcfc;
 }
 .col-song .info .song-title:hover{
-    color: rgb(179, 110, 209);
+    color: #6e55b4;
 }
 .col-song .info .singer{
     font-size: 12px;
@@ -86,7 +89,7 @@
       max-width: 170px;
 }
 .col-song .info .singer:hover{
-    color:  rgb(179, 110, 209);
+    color:  #6e55b4;
 }
 .col-song .rate{
     font-size: 14px;
@@ -149,7 +152,7 @@
       text-transform: capitalize;
 }
 .col-song-new .info .song-title:hover{
-    color: rgb(179, 110, 209);
+    color: #6e55b4;
 }
 
 .col-song-new .info .singer{
@@ -165,7 +168,7 @@
       text-transform: capitalize;
 }
 .col-song-new .info .singer:hover{
-    color:  rgb(179, 110, 209);
+    color:  #6e55b4;
 }
 .col-song-new .like{
   padding: 10px;
@@ -178,3 +181,328 @@
 .col-song-new:hover .like, .col-song-new:hover .more, .col-song-new:hover .img-song .overlay{
     opacity: 1;
 }
+header{
+    display: flex;
+    
+    justify-content: center;
+    
+}
+.top-bar{
+    display: grid;
+    grid-template-columns: 17% 55% 28%;
+    width: 1026px;
+    height: 72px;
+    
+}
+.top-bar .logo-zing{
+    width: 100px;
+    height: 32px;
+    margin: 19px 0 0 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./Images/logo.JPG');
+}
+.top-bar .search-group{
+    margin: 15px 0 15px 0px;
+ 
+    width: 100%;
+    border: 1px solid rgba(219,219,219,.5);
+}
+.top-bar .search-group .search-container{
+    width: 100%;
+    display: block;
+}
+ .search-container .header-search-group{
+    position: relative;
+    min-width: 200px;
+    height: 40px;
+}
+.search-container .header-search-group {
+    display: flex;
+    align-items: center;
+}
+ .search-container .header-search-group .search-icon{
+     width: 20px;
+     height: 20px;
+     margin: 5px 5px 0 5px;
+ }
+ .search-container .header-search-group .input-wrapper{
+  width: 100%;
+ }
+ .search-container .header-search-group .input-wrapper input{
+    width: 100%;
+    border: none;
+   }
+   .search-container .header-search-group .input-wrapper input:focus{
+    width: 100%;
+    outline: none !important;
+   }
+   .search-container .header-search-group .close-icon{
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0 5px;
+    cursor: pointer;
+}
+input::placeholder {
+    font-size: 12px;
+  }
+  .top-bar .profile{
+      display:flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+.top-bar .profile .img-song img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+.top-bar .profile .info .song-title{
+    font-size: 14px;
+    font-weight: 550;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+      -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 1.5;
+      width: 120px;
+      color: rgb(78, 74, 74);
+      
+}
+.top-bar .profile .info .song-title:hover{
+    color: #6e55b4;
+}
+.top-bar .profile .info .singer{
+    font-size: 12px;
+    font-weight: 500;
+    color: #A0A0A0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+      -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+      overflow: hidden;
+      width: 120px;
+}
+.top-bar .profile .extension{
+    position: relative;
+}
+.top-bar .profile .extension .option-extension li{
+    font-size: 14px;
+
+}
+.top-bar .profile .extension .option-extension li:hover{
+    font-size: 14px;
+    background-color: rgb(223, 219, 219);
+    color: #6e55b4; 
+}
+.top-bar .profile .extension .drop-menu{
+    position: absolute;
+    visibility: hidden;
+    z-index: 99;
+    right: 0;
+
+    width: 215px;
+    margin-top: 0px;
+    background-color: #fcfcfc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    user-select: none;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    padding: 10px 0;
+}
+.top-bar .profile .extension .down-icon{
+    width: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+.top-bar .profile .extension:hover .drop-menu{
+    visibility: visible;
+}
+
+.top-bar .profile .extension .drop-menu ul li {
+    padding: 8px 10px;
+    
+}
+.top-bar .profile .extension .drop-menu ul li span {
+    margin: 15px;
+    color: rgb(66, 64, 68);
+}
+.top-bar .profile .extension .drop-menu ul li a:hover {
+    color: #6e55b4; 
+}
+.top-bar .profile .extension .drop-menu ul li .icon {
+    font-size: 24px;
+    color: rgb(165, 163, 163);
+}
+
+.menu-bar .menu-bar-inner .nav{
+   display: flex; 
+  
+   
+}
+.menu-bar .menu-bar-inner .nav>li{
+    padding: 0 30px 0 0;
+    width: auto;
+    height: 54px;
+    font-size: 14px;
+    position: relative;
+}
+.menu-bar .menu-bar-inner .nav>li>a{
+    height: 54px;
+    line-height: 54px;
+    display: block;
+    font-weight: 550;
+    color:rgb(66, 64, 68);
+}
+.menu-bar .menu-bar-inner .nav>li:hover>a{
+
+    color:#6e55b4;
+    border-bottom: 2px solid #6e55b4;
+}
+.menu-bar .menu-bar-inner .nav>li .table-menu{
+    position: absolute;
+    display: flex;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    width: 600px;
+    padding: 10px 0;
+}
+.menu-bar .menu-bar-inner .nav>.artist .table-menu{
+    position: absolute;
+    display: flex;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    width: 150px;
+    padding: 10px 0;
+}
+.menu-bar .menu-bar-inner .nav>.song-for-me .table-menu{
+    position: absolute;
+    display: flex;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+    width: 240px;
+    padding: 10px 0;
+}
+.table-menu .nav-column{
+    flex-grow: 1;
+    width: 150px;
+}
+.table-menu .nav-column>div{
+    cursor: pointer;
+    font-size: 14px;
+    color:rgb(46, 45, 48);
+    font-weight: 600;
+    padding: 10px 0 10px 15px;
+}
+.table-menu .nav-column li{
+    line-height: 40px;
+ }
+
+.table-menu .nav-column li a{
+   display: block;
+
+   padding: 0 15px;
+   color: rgb(66, 64, 68);
+   text-overflow: ellipsis;
+   text-transform: capitalize;
+   display: -webkit-box;
+      -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.table-menu .nav-column li a:hover{
+    color:#6e55b4;
+    background-color: #EFEFEF;
+ }
+ .table-menu{
+     visibility: hidden;
+     z-index: 1000000;
+     
+ }
+ .nav li:hover .table-menu{
+     visibility: visible;
+ }
+ .table-menu .nav-column li .thumb-1{
+     background-color: white;
+     border: 1px solid #EFEFEF;
+     top: 10px;
+     position: relative;
+     display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+ 
+   
+ }
+ .table-menu .nav-column li .thumb-1 img{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     height: 50%;
+    background-size: cover;
+    background-position: center;
+ }
+ .table-menu .nav-column li .thumb-2{
+    background-color: white;
+    border: 1px solid #EFEFEF;
+    top: 10px;
+    position: relative;
+    display: inline-block;
+   width: 30px;
+   height: 30px;
+   margin-right: 5px;
+}
+.table-menu .nav-column li .thumb-2 img{
+
+    height: 100%;
+   background-size: cover;
+   background-position: center;
+}
+#view-all{
+    text-align: center;
+    border-top: 1px dotted #dbdbdb;
+    padding: 10px;
+}
+ .none{
+     padding: 0 !important;
+ }
+ .none ul{
+     padding: 5px 0;
+ }
+ #icon-vip{
+  display: flex;
+  width: 50px;
+  align-items: center;
+ }
+ #icon-vip img{
+     width: 50px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+   }
+   .nav li:hover #icon-vip {
+       border: none;
+       opacity: 0.8;
+   }
+   #icon-zma{
+    display: flex;
+    width: 60px;
+    align-items: center;
+   }
+   #icon-zma img{
+       width: 60px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+     }
+     .nav li:hover #icon-zma {
+         border: none;
+         opacity: 0.8;
+     }
+     .nav .vip-zma{
+         padding: 0 20px 0 0;
+     }
+ 
+ 
