@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+   
 }
 .album {
     width: 190px;
@@ -87,3 +87,4 @@
   .card-info .title a:hover,.card-info .artist a:hover {
     color: #7406A2;
   }
+  
